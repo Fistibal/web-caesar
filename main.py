@@ -6,7 +6,6 @@ app.config['DEBUG'] = True
 
 form = """
 <!DOCTYPE html>
-
 <html>
     <head>
         <style>
@@ -41,7 +40,7 @@ form = """
 
 @app.route("/")
 def index():
-    return form.format()
+    return form.format("")
 
 @app.route("/", methods=['POST'])
 def encrypt():
